@@ -6,8 +6,8 @@ OutTerminator = '\n';
 # MaxInput = 0;
 # LockTimeout should be GT ReplyTimeout
 LockTimeout = 5000;
-ReplyTimeout = 200;
-ReadTimeout = 100;
+ReplyTimeout = 2000;
+ReadTimeout = 1000;
 
 read_float {
     out "\$1?"; in "%f";
@@ -36,3 +36,62 @@ write_string {
 #    @init{ read_string;}
 }
 
+getUnits {
+    out "VOLT:UNIT?"; 
+    in "%{VPP|VRMS|DBM}";
+    ExtraInput = Ignore;
+}
+
+setUnits {
+    out "VOLT:UNIT %{VPP|VRMS|DBM}"; 
+}
+
+getFunction {
+    out "FUNC?"; 
+    in "%{SIN|SQU|RAMP|PULS|NOIS|DC|USER}";
+    ExtraInput = Ignore;
+}
+
+setFunction {
+    out "FUNC %{SIN|SQU|RAMP|PULS|NOIS|DC|USER}"; 
+}
+
+getFreq {
+    out "FREQ?"; 
+    in "%f";
+    ExtraInput = Ignore;
+}
+
+setFreq {
+    out "FREQ %f"; 
+}
+
+getAmplitude {
+    out "VOLT?"; 
+    in "%f";
+    ExtraInput = Ignore;
+}
+
+setAmplitude {
+    out "VOLT %f"; 
+}
+
+getOffset {
+    out "VOLT:OFFS?"; 
+    in "%f";
+    ExtraInput = Ignore;
+}
+
+setOffset {
+    out "VOLT:OFFS %f"; 
+}
+
+getOutput {
+    out "OUTP?"; 
+    in "%d";
+    ExtraInput = Ignore;
+}
+
+setOutput {
+    out "OUTP %{OFF|ON}"; 
+}

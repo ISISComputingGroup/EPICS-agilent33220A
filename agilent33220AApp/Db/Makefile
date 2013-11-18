@@ -12,6 +12,7 @@ include $(TOP)/configure/CONFIG
 # templates like this
 #
 DB += agilent33220A.template
+DB += agilent33220A_Isis.db
 #DB += basic_motor.template
 
 #----------------------------------------------------
