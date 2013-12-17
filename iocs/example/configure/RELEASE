@@ -8,7 +8,7 @@ SUPPORT = /dls_sw/prod/R3.14.11/support
 WORK = /dls_sw/work/R3.14.11/support
 # Module paths
 AGILENT33220A = $(SUPPORT)/agilent33220A/1-4-1
-ASYN = $(SUPPORT)/asyn/4-18
+ASYN = $(SUPPORT)/asyn/4-22
 BUSY = $(SUPPORT)/busy/1-4
 STREAMDEVICE = $(SUPPORT)/StreamDevice
 PCRE=$(SUPPORT)/pcre
