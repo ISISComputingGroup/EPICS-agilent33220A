@@ -303,7 +303,7 @@ record(ao, "$(P)$(Q):PHASE") {
   field(FLNK, "$(P)$(Q):PHASE:RBV")
   field(OUT, "@agilent33220A.proto write_float(BURS:PHAS) $(PORT)")
   field(PREC, "3")
-  field(EGU, "Deg")
+  field(EGU, "degree")
   field(SDIS, "$(P)$(Q):DISABLE")
 }
 
@@ -313,7 +313,7 @@ record(ai, "$(P)$(Q):PHASE:RBV") {
   field(DTYP, "stream")
   field(INP, "@agilent33220A.proto read_float(BURS:PHAS) $(PORT)")
   field(PREC, "3")
-  field(EGU, "Deg")
+  field(EGU, "degree")
   field(SDIS, "$(P)$(Q):DISABLE")
 }
 
@@ -323,7 +323,7 @@ record(ao, "$(P)$(Q):PULSEW") {
   field(FLNK, "$(P)$(Q):PULSEW:RBV")
   field(OUT, "@agilent33220A.proto write_float(FUNC:PULS:WIDT) $(PORT)")
   field(PREC, "6")
-  field(EGU, "sec")
+  field(EGU, "s")
   field(SDIS, "$(P)$(Q):DISABLE")
 }
 
@@ -333,7 +333,7 @@ record(ai, "$(P)$(Q):PULSEW:RBV") {
   field(DTYP, "stream")
   field(INP, "@agilent33220A.proto read_float(FUNC:PULS:WIDT) $(PORT)")
   field(PREC, "6")
-  field(EGU, "sec")
+  field(EGU, "s")
   field(SDIS, "$(P)$(Q):DISABLE")
 }
 
