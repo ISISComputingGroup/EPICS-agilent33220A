@@ -26,7 +26,7 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 STREAMDEVICE=$(SUPPORT)/StreamDevice
 PCRE=$(SUPPORT)/pcre
 ASYN=$(SUPPORT)/asyn/4-26
-BUSY=$(SUPPORT)/busy/1-4
+BUSY=$(SUPPORT)/busy/1-6-1
 AGILENT33220A=$(SUPPORT)/agilent33220A/1-4-1
 
 
