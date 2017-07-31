@@ -73,7 +73,7 @@ getAmplitude {
 }
 
 setAmplitude {
-    out "VOLT %f"; 
+    out "VOLT %s"; 
 }
 
 getOffset {
@@ -83,7 +83,7 @@ getOffset {
 }
 
 setOffset {
-    out "VOLT:OFFS %f"; 
+    out "VOLT:OFFS %s"; 
 }
 
 getOutput {
@@ -103,7 +103,7 @@ getVoltHigh{
 }
 
 setVoltHigh{
-	out "VOLT:HIGH %f"
+	out "VOLT:HIGH %s"
 }
 
 getVoltLow{
@@ -113,7 +113,7 @@ getVoltLow{
 }
 
 setVoltLow{
-	out "VOLT:LOW %f";
+	out "VOLT:LOW %s";
 }
 
 getIDN{
