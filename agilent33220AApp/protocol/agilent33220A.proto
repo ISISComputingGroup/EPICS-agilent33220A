@@ -6,8 +6,8 @@ OutTerminator = '\n';
 # MaxInput = 0;
 # LockTimeout should be GT ReplyTimeout
 LockTimeout = 5000;
-ReplyTimeout = 200;
-ReadTimeout = 100;
+ReplyTimeout = 2000;
+ReadTimeout = 1000;
 
 read_float {
     out "\$1?"; in "%f";
@@ -73,7 +73,7 @@ getAmplitude {
 }
 
 setAmplitude {
-    out "VOLT %s"; 
+    out "VOLT %f"; 
 }
 
 getOffset {
@@ -83,7 +83,7 @@ getOffset {
 }
 
 setOffset {
-    out "VOLT:OFFS %s"; 
+    out "VOLT:OFFS %f"; 
 }
 
 getOutput {
@@ -103,7 +103,7 @@ getVoltHigh{
 }
 
 setVoltHigh{
-	out "VOLT:HIGH %s"
+	out "VOLT:HIGH %f"
 }
 
 getVoltLow{
@@ -113,7 +113,7 @@ getVoltLow{
 }
 
 setVoltLow{
-	out "VOLT:LOW %s";
+	out "VOLT:LOW %f";
 }
 
 getIDN{
