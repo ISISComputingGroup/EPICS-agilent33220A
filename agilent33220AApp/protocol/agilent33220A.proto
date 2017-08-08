@@ -122,12 +122,6 @@ getIDN{
 	ExtraInput = Ignore;
 }
 
-getTest{
-	out "*TST?";
-	in "%27c";
-	ExtraInput = Ignore;
-}
-
 getVoltRangeAuto{
 	out "VOLT:RANG:AUTO?";
 	in "%{0|1|2}";
