@@ -95,3 +95,39 @@ getOutput {
 setOutput {
     out "OUTP %{OFF|ON}"; 
 }
+
+getVoltHigh{
+	out "VOLT:HIGH?";
+	in "%f";
+	ExtraInput = Ignore;
+}
+
+setVoltHigh{
+	out "VOLT:HIGH %f"
+}
+
+getVoltLow{
+	out "VOLT:LOW?";
+	in "%f";
+	ExtraInput = Ignore;
+}
+
+setVoltLow{
+	out "VOLT:LOW %f";
+}
+
+getIDN{
+	out "*IDN?";
+	in "%27c";
+	ExtraInput = Ignore;
+}
+
+getVoltRangeAuto{
+	out "VOLT:RANG:AUTO?";
+	in "%{0|1|2}";
+	ExtraInput = Ignore;
+}
+
+setVoltRangeAuto{
+    out "VOLT:RANG:AUTO %{OFF|ON|ONCE}"; 
+}
