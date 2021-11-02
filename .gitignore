@@ -13,3 +13,7 @@ runIOC.sh
 relPaths.sh
 /data
 .project
+__pycache__/
+*.py[cod]
+*$py.class
+/test-reports/
