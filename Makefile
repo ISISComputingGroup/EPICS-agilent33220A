@@ -16,4 +16,5 @@ iocBoot_DEPEND_DIRS += $(filter %App,$(DIRS))
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard etc))
 include $(TOP)/configure/RULES_TOP
 
-
+ioctests:
+	.\system_tests\run_tests.bat
